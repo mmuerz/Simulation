@@ -137,7 +137,7 @@ public class SimpleKineticNBodySimulation extends Simulation {
         if (isInitFinished) {
             for (Body body : BODIES) {
                 if (body.isExistent()) {
-                    updateBody(elapsedTime, body);
+                    updateBody(elapsedTime, body); 
                 } else {
                     Node parent = body.getParent();
                     if (parent != null) {
